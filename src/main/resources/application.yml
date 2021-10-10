@@ -1,0 +1,15 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  profiles:
+    active: ${ENVIRONMENT}
+
+springfox:
+  documentation:
+    swagger-ui:
+      base-url: /docs #/docs/swagger-ui/index.html
+
+app:
+  security:
+    jwt-signing-key: ${JWT_SIGNING_KEY}
